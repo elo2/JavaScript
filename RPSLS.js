@@ -35,6 +35,7 @@ else {
 }
 
 //the following prompt function is from https://github.com/flatiron/prompt
+//requires installation at CLI of "$ [sudo] npm install prompt"
 var prompt = require("prompt");
 prompt.message = "Choose your weapon";
 prompt.start ();
