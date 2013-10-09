@@ -33,7 +33,9 @@ else if (computerChoice < 0.8) {
 else {
   computerChoice = 5; //Spock
 }
-/*
+//commenting this out until i can get it to work properly
+
+/* 
 var prompt = require("prompt");
 prompt.message = "Choose ";
 prompt.start ();
@@ -43,7 +45,6 @@ prompt.get('weapon', function(result) {
 });
 */
 
-//takes in weapon and computerChoice
 
 var compare = function (choice1, choice2) {
 //It's a tie
