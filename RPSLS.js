@@ -34,7 +34,7 @@ else {
   computerChoice = 5; //Spock
 }
 //commenting this out until i can get it to work properly
-
+//the following prompt function is from https://github.com/flatiron/prompt
 /* 
 var prompt = require("prompt");
 prompt.message = "Choose ";
