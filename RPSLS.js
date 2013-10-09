@@ -4,7 +4,7 @@ console.log("Welcome to my game of \nRock, Paper, Scissors, Lizard, Spock");
 console.log("To begin, please enter your weapon of choice:");
 console.log("You can enter the item or it's corresponding number:");
 console.log("1-Rock; 2-Paper; 3-Scissors; 4-Lizard; 5-Spock;");
-
+//commenting this out to try and use the prompt function (see below)
 /*var readline = require('readline');
 var rl = readline.createInterface({
   input: process.stdin,
@@ -37,9 +37,9 @@ else {
 //the following prompt function is from https://github.com/flatiron/prompt
 /* 
 var prompt = require("prompt");
-prompt.message = "Choose ";
+prompt.message = "Choose your weapon";
 prompt.start ();
-prompt.get('weapon', function(result) {
+prompt.get(':', function(result) {
     weapon = result;
     compare(weapon, computerChoice);
 });
