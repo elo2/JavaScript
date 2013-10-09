@@ -33,7 +33,7 @@ else if (computerChoice < 0.8) {
 else {
   computerChoice = 5; //Spock
 }
-
+/*
 var prompt = require("prompt");
 prompt.message = "Choose ";
 prompt.start ();
@@ -41,6 +41,7 @@ prompt.get('weapon', function(result) {
     weapon = result;
     compare(weapon, computerChoice);
 });
+*/
 
 //takes in weapon and computerChoice
 
@@ -67,7 +68,7 @@ if (choice1 === "rock" || choice1 === 1) {
 //Paper
 else if (choice1 === "paper" || choice1 === 2) {
     if (choice2 === 1) {
-        console.log("Paper covers rock. I know it's a weird rule!");
+        console.log("Paper covers rock. I know, it's a weird rule!");
     }
     else if (choice2 === 3) {
         console.log("Scissors cut paper!");
@@ -127,3 +128,10 @@ else if (choice1 === "spock" || choice1 === 5) {
 else { //Something didn't work
     console.log("Something isn't right, sir.");
 }}
+
+//debuggging::randomizes user input function "weapon" to test comapre function
+weapon = Math.floor((Math.random()*5)+1) //integer between 1 and 5
+console.log(weapon)
+console.log(computerChoice)
+compare(weapon, computerChoice)
+//debugging
