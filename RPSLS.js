@@ -1,4 +1,5 @@
 //This is a small little rock paper scissors lizard Spock game!
+//requires installation at CLI of "$ [sudo] npm install prompt"
 
 console.log("Welcome to my game of \nRock, Paper, Scissors, Lizard, Spock");
 console.log("To begin, please enter your weapon of choice:");
