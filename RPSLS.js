@@ -35,16 +35,14 @@ else {
 }
 //commenting this out until i can get it to work properly
 //the following prompt function is from https://github.com/flatiron/prompt
-/* 
+/*
 var prompt = require("prompt");
 prompt.message = "Choose your weapon";
 prompt.start ();
 prompt.get(':', function(result) {
-    weapon = result;
-    compare(weapon, computerChoice);
+    compare(result, computerChoice);
 });
 */
-
 
 var compare = function (choice1, choice2) {
 //It's a tie
@@ -129,10 +127,11 @@ else if (choice1 === "spock" || choice1 === 5) {
 else { //Something didn't work
     console.log("Something isn't right, sir.");
 }}
-
-//debuggging::randomizes user input function "weapon" to test comapre function
+/*
+//debuggging::randomizes user input function "weapon" to test compare function
 weapon = Math.floor((Math.random()*5)+1) //integer between 1 and 5
-console.log(weapon)
-console.log(computerChoice)
-compare(weapon, computerChoice)
+console.log(weapon) //gives "user choice"
+console.log(computerChoice) //gives "opponents (computer's)" choice
+compare(weapon, computerChoice) //invokes compare function
 //debugging
+*/
