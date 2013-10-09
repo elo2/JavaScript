@@ -33,16 +33,16 @@ else if (computerChoice < 0.8) {
 else {
   computerChoice = 5; //Spock
 }
-//commenting this out until i can get it to work properly
+
 //the following prompt function is from https://github.com/flatiron/prompt
-/*
 var prompt = require("prompt");
 prompt.message = "Choose your weapon";
 prompt.start ();
-prompt.get(':', function(result) {
-    compare(result, computerChoice);
+prompt.get('weapon', function(err, result) {
+    var weapon = result.weapon * 1;
+    compare(weapon, computerChoice);
 });
-*/
+
 
 var compare = function (choice1, choice2) {
 //It's a tie
